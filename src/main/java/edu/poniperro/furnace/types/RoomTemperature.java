@@ -16,7 +16,7 @@ public class RoomTemperature implements Temperature {
     }
 
     @Override
-    public void setTemperature(int temp) {
+    public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
 }
