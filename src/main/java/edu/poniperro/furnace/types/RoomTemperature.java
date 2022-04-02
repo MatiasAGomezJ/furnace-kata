@@ -11,12 +11,12 @@ public class RoomTemperature implements Temperature {
     }
 
     @Override
-    public void setTemperature(int temp) {
-        this.temperature = temperature;
+    public int getTemperature() {
+        return temperature;
     }
 
     @Override
-    public int getTemperature() {
-        return temperature;
+    public void setTemperature(int temp) {
+        this.temperature = temperature;
     }
 }
