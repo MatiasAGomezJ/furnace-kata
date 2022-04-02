@@ -30,7 +30,7 @@ class GasHeaterTest {
     @Test
     public void disengageTest() {
         assertEquals(20, temperature.getTemperature());
-        heater.engage(temperature);
+        heater.disengage(temperature);
         assertEquals(19, temperature.getTemperature());
     }
 }
