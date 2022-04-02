@@ -1,5 +1,13 @@
 package edu.poniperro.furnace;
 
+import edu.poniperro.furnace.hardware.GasHeater;
+import edu.poniperro.furnace.hardware.Regulator;
+import edu.poniperro.furnace.hardware.RemoteCommandSensor;
+import edu.poniperro.furnace.interfaces.Heater;
+import edu.poniperro.furnace.interfaces.Thermometer;
+import edu.poniperro.furnace.otherstuff.Jedi;
+import edu.poniperro.furnace.types.RoomTemperature;
+
 public class App {
 
     public static void main( String[] args )
