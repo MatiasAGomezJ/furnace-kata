@@ -7,11 +7,11 @@ public class GasHeater implements Heater {
 
     @Override
     public void engage(Temperature temperature) {
-        temperature.increase();
+        temperature.changeTemperatureBy(1);
     }
 
     @Override
     public void disengage(Temperature temperature) {
-        temperature.decrease();
+        temperature.changeTemperatureBy(-1);
     }
 }
