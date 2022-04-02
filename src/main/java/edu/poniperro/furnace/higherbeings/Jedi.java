@@ -4,6 +4,7 @@ import edu.poniperro.furnace.interfaces.Heater;
 import edu.poniperro.furnace.interfaces.Temperature;
 
 public class Jedi implements Heater {
+
     @Override
     public void engage(Temperature temperature) {
         temperature.changeTemperatureBy(useLightSable());
