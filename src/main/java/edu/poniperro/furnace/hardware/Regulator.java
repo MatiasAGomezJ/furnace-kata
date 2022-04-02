@@ -2,13 +2,13 @@ package edu.poniperro.furnace.hardware;
 
 //import edu.poniperro.furnace.interfaces.Heater;
 //import edu.poniperro.furnace.interfaces.Thermometer;
-//import edu.poniperro.furnace.types.RegulatorDisplayCodes;
+import edu.poniperro.furnace.types.RegulatorDisplayCodes;
 import edu.poniperro.furnace.types.RoomTemperature;
 
 public class Regulator {
 
 //    public void regulate(Thermometer t, Heater h, double minTemp, double maxTemp, RoomTemperature temperature) {
-//        RegulatorDisplayCodes code;
+        RegulatorDisplayCodes code;
 //        while (t.read(temperature) < maxTemp) {
 //            code = RegulatorDisplayCodes.HEATING;
 //            h.engage(temperature);
