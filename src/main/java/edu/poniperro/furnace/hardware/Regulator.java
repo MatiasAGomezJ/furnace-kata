@@ -1,6 +1,6 @@
 package edu.poniperro.furnace.hardware;
 
-//import edu.poniperro.furnace.interfaces.Heater;
+import edu.poniperro.furnace.interfaces.Heater;
 //import edu.poniperro.furnace.interfaces.Thermometer;
 import edu.poniperro.furnace.types.RegulatorDisplayCodes;
 import edu.poniperro.furnace.types.RoomTemperature;
