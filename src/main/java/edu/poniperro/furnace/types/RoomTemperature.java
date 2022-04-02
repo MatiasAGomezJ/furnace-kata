@@ -19,4 +19,14 @@ public class RoomTemperature implements Temperature {
     public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
+
+    @Override
+    public void increase() {
+        setTemperature(getTemperature() + 1);
+    }
+
+    @Override
+    public void decrease() {
+        setTemperature(getTemperature() - 1);
+    }
 }
