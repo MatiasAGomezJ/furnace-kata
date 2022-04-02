@@ -22,7 +22,7 @@ public class App {
         Regulator regulator = new Regulator();
 
         System.out.println("Arrancando...");
-//        regulator.regulate(thermometer, heater, minTemp, maxTemp, temperature);
+        regulator.regulate(thermometer, heater, minTemp, maxTemp, temperature);
 
 //        Jedi yoda = new Jedi();
         System.out.println("\nArrancando a Yoda: ");
