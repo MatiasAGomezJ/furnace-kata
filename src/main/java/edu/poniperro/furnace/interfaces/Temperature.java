@@ -6,7 +6,5 @@ public interface Temperature {
 
     void setTemperature(int temperature);
 
-    void increase();
-
-    void decrease();
+    void changeTemperatureBy(int temperature);
 }

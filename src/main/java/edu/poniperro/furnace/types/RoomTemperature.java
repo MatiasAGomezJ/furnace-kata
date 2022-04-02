@@ -21,12 +21,7 @@ public class RoomTemperature implements Temperature {
     }
 
     @Override
-    public void increase() {
-        setTemperature(getTemperature() + 1);
-    }
-
-    @Override
-    public void decrease() {
-        setTemperature(getTemperature() - 1);
+    public void changeTemperatureBy(int temperature) {
+        setTemperature(getTemperature() + temperature);
     }
 }
