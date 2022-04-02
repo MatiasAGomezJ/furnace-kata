@@ -4,5 +4,5 @@ public interface Temperature {
 
     int getTemperature();
 
-    void setTemperature(int temp);
+    void setTemperature(int temperature);
 }
