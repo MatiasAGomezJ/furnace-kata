@@ -17,7 +17,8 @@ class GasHeaterTest {
     @BeforeEach
     void setup() {
         heater = new GasHeater();
-        temperature = new RoomTemperature(20);
+        temperature = RoomTemperature.getInstance();
+        temperature.setTemperature(20);
     }
 
     @Test
