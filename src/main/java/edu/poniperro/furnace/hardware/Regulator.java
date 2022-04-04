@@ -1,13 +1,14 @@
 package edu.poniperro.furnace.hardware;
 
 import edu.poniperro.furnace.interfaces.Heater;
+import edu.poniperro.furnace.interfaces.Temperature;
 import edu.poniperro.furnace.interfaces.Thermometer;
 import edu.poniperro.furnace.types.RegulatorDisplayCodes;
 import edu.poniperro.furnace.types.RoomTemperature;
 
 public class Regulator {
 
-    public void regulate(Thermometer t, Heater h, double minTemp, double maxTemp, RoomTemperature temperature) {
+    public void regulate(Thermometer t, Heater h, double minTemp, double maxTemp, Temperature temperature) {
         RegulatorDisplayCodes code;
         while (t.read(temperature) < maxTemp) {
             code = RegulatorDisplayCodes.HEATING;
@@ -21,7 +22,7 @@ public class Regulator {
         }
     }
 
-    private void message(RegulatorDisplayCodes code, RoomTemperature temperature) {
+    private void message(RegulatorDisplayCodes code, Temperature temperature) {
         switch (code) {
             case HEATING:
                 System.out.println("Calentando => temperatura " + temperature.getTemperature());

@@ -2,26 +2,28 @@ package edu.poniperro.furnace.types;
 
 import edu.poniperro.furnace.interfaces.Temperature;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class RoomTemperatureTest {
 
-    static Temperature temperatura;
+    Temperature temperature;
 
-    @BeforeAll
-    static void setup() {
-        temperatura = new RoomTemperature(21);
+    @BeforeEach
+    void setup() {
+        temperature = RoomTemperature.getInstance();
+        temperature.setTemperature(21);
     }
 
     @Test
     void getsetTest() {
         int expected = 21;
-        assertEquals(expected, temperatura.getTemperature());
+        assertEquals(expected, temperature.getTemperature());
 
         expected = 15;
-        temperatura.setTemperature(15);
-        assertEquals(expected, temperatura.getTemperature());
+        temperature.setTemperature(15);
+        assertEquals(expected, temperature.getTemperature());
     }
 }
