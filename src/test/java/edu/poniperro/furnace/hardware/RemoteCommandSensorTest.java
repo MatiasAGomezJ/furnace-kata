@@ -16,7 +16,8 @@ class RemoteCommandSensorTest {
     @BeforeEach
     void setup() {
         thermometer = new RemoteCommandSensor();
-        temperature = new RoomTemperature(20);
+        temperature = RoomTemperature.getInstance();
+        temperature.setTemperature(20);
     }
 
     @Test

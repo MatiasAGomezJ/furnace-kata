@@ -15,7 +15,8 @@ class JediTest {
     @BeforeEach
     void setup() {
         heater = new Jedi();
-        temperature = new RoomTemperature(20);
+        temperature = RoomTemperature.getInstance();
+        temperature.setTemperature(20);
     }
 
     @Test
