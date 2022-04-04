@@ -5,9 +5,16 @@ import edu.poniperro.furnace.interfaces.Temperature;
 public class RoomTemperature implements Temperature {
 
     private int temperature;
+    private static RoomTemperature instance = null;
 
-    public RoomTemperature(int temperature) {
-        this.temperature = temperature;
+    private RoomTemperature() {
+    }
+
+    public static RoomTemperature getInstance() {
+        if (instance == null) {
+            instance = new RoomTemperature();
+        }
+        return instance;
     }
 
     @Override
