@@ -25,10 +25,10 @@ public class Regulator {
     private void message(RegulatorDisplayCodes code, Temperature temperature) {
         switch (code) {
             case HEATING:
-                System.out.println("Calentando => temperatura " + temperature.getTemperature());
+                System.out.println("\u001B[31m"+ "Calentando" + "\u001B[0m" + " | " + temperature.getTemperature() + " C");
                 break;
             case WAITING:
-                System.out.println("Apagado => temperatura " + temperature.getTemperature());
+                System.out.println("\u001B[34m" + "Apagado" + "\u001B[0m" + " | " + temperature.getTemperature() + " C");
                 break;
             default:
                 System.out.println("Algo raro sucede...");
