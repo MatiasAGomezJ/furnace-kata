@@ -26,4 +26,9 @@ class RoomTemperatureTest {
         temperature.setTemperature(15);
         assertEquals(expected, temperature.getTemperature());
     }
+
+    @Test
+    void singletonTest() {
+        assertEquals(RoomTemperature.getInstance().hashCode(), temperature.hashCode());
+    }
 }
